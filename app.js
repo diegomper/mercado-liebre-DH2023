@@ -1,9 +1,10 @@
 let express= require("express");
 let app = express();
 let path = require("path");
+let port = process.env.PORT || 3000;
 
-app.listen(3000, () =>
-    console.log("Servidor corriendo")
+app.listen(port, () =>
+    console.log("Servidor corriendo en puerto 3000")
 );
 
 app.get("/", (req, res) => {
