@@ -4,7 +4,7 @@ let path = require("path");
 let port = process.env.PORT || 3000;
 
 app.listen(port, () =>
-    console.log("Servidor corriendo en puerto 3000")
+    console.log("Servidor corriendo en puerto " + port)
 );
 
 app.get("/", (req, res) => {
