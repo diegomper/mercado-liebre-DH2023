@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Roboto, Arial;
+    margin: 0%;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-top: 20px;
+}
+
+header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+header img {
+    width: 40%;
+}
+
+.banner {
+    margin: 0px;
+    width: 100%;
+}
+
+.barra-buscar {
+    width: 40%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.barra-buscar input {
+    width: 87%;
+    height: 30px;
+    border: none;
+}
+
+nav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    width: 100%;
+    text-align: center;
+}
+
+.burger-menu i {
+    padding: 20px;
+    margin: 30px;
+    background-color:  #1259c3;
+    border-radius: 6px;
+    color: white;
+}
+
+main {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main section img {
+    width: 100%;
+}
+
+article {
+    background-color: white;
+    margin-top: 10px;
+}
+
+article div {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    display: flex;
+    position: relative; 
+}
+
+article div i {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+section article div i:hover {
+    animation: i 1500ms alternate;
+}
+@keyframes i {
+    0% { transform: rotateZ(0deg);}
+    10% { transform: rotateZ(-9deg);}
+    20% { transform: rotateZ(-18deg);}
+    30% { transform: rotateZ(-27deg);}
+    40% { transform: rotateZ(-36deg);}
+    50% { transform: rotateZ(-45deg);}
+    60% {transform: rotateZ(-54deg);}
+    70% { transform: rotateZ(-63deg);}
+    80% {transform: rotateZ(-72deg);}
+    90% { transform: rotateZ(-81deg);}
+    100% {transform: rotateZ(-90deg);}
+}
+p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento {
+    color: #39b54a;
+    width: 70%;
+}
+
+.descuento, .descripcion {
+    font-size: 16px;
+}
+
+.descripcion {
+    visibility: hidden;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+footer i {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: color, 2s;
+}
+
+footer i:hover {
+    color: #EAC926;
+}
+
+footer p {
+    color: #b6b4b4;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+h3 {
+    color: #666;
+}
+
+h4 {
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 10px;
+    color: #b6b4b4;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form input {
+    font-size: 20px;
+    margin-top: 10px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input.intereses {
+    margin-right: 10px;
+    height: 15px;
+}
+input.radio{
+    margin-right: 10px;
+    height: 15px;
+}
+
+.foto-usuario {
+    height: 50px;
+}
+label {
+    font-weight: bold;
+}
+
+form button {
+    width: 100px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px #0022AA;
+    background-color: #1259c3;
+}
+
+button:hover {
+    background-color: #0022AA;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+@media (min-width: 361px) {
+    article:hover .descripcion {
+        visibility: visible;
+    }
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 769px) {
+    header  {
+        align-items: center;
+    }
+    .logo-barra {
+        width: 66%;
+    }
+    header p {
+        width: 33%;
+        margin-top: 20px;
+    }
+    
+    .descuento {
+        margin-top: 1px;
+        margin-left: 5px;
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    ul {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .burger-menu {
+        display: none;
+    }
+    article  {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .burger-menu {
+        display: none;
+    }
+    article  {
+        width: 23%;
+    }
+    .descuento {
+        margin-left: 25px;
+        margin-top: 1px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer div {
+        margin-top: 20px;
+        width: 33%;
+    }
+}
+
