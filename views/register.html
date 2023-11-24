@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- ESTILOS -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +10,28 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
     <title>ML-Registro</title>
 </head>
+
+<!-- BODY -->
 <body>
+
+  <!-- HEADER -->
     <header>
       <div class="logo-barra">
+
+        <!-- LOGO MERCADOLIEBRE -->
         <img src="/images/logo-mercado-liebre.svg" alt="logo-mercado-liebre">
+
+        <!-- BARRA BUSQUEDA -->
         <div class="barra-buscar">
 					<input type="text" placeholder="Buscar Productos, marcas">
 					<i class="fa-solid fa-magnifying-glass"></i>
 				</div>
       </div>
+
+      <!-- COMPRA EN CUOTAS -->
         <p><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+
+        <!-- NAV BAR -->
         <nav>
             <ul>
                 <a href="">Ofertas</a>
@@ -31,26 +45,46 @@
                 <a href="">Mis compras<i class="fa-solid fa-basket-shopping"></i></a>
             </ul>
         </nav>
+
+        <!-- MENU HAMBURGUESA -->
 				<div class="burger-menu">
 					<i class="fas fa-bars"></i>
 				</div>
+
+        <!-- BANNER -->
 				<img src="/images/img-home-banner.jpg" alt="banner-home" class="banner">
     </header>
+
+    <!-- MAIN -->
     <main>
+
+      <!-- FORMULARIO REGISTRO -->
 			<form action="/register.html" method="POST">
+
+        <!-- NOMBRE Y APELLIDO -->
         <input type="text" name="nombre-apellido" placeholder="Nombre y apellido"  required>
         <br>
+
+        <!-- USUARIO -->
         <input type="text" name="usuario" placeholder="Nombre de usuario" required>
         <br>
+
+        <!-- EMAIL -->
         <input type="email" name="email" placeholder="Email"required>
         <br>
+
+        <!-- FECHA -->
         <label for="fecha">Fecha de nacimiento
           <br>
           <input type="date" name="fecha-nacimiento" id="fecha" required>
         </label>
         <br>
+
+        <!-- DOMICILIO -->
         <input type="text" name="domicilio" placeholder="Domicilio" required>
         <br>
+
+        <!-- PERFIL DEL USUARIO -->
         <label>Perfil del usuario:
           <br>
           <label for="perfil"><input type="radio" name="perfil" value="comprador" class="radio" required>Comprador</label>
@@ -58,6 +92,8 @@
           <label for="perfil"><input type="radio" name="perfil" value="vendedor" class="radio" required>Vendedor</label>
         </label>
         <br>
+
+        <!-- INTERESES -->
         <label>Intereses:
           <br>
           <label for="intereses"><input type="checkbox" name="intereses" value="electro" class="intereses">Electro</label>
@@ -71,44 +107,62 @@
           <label for="intereses"><input type="checkbox" name="intereses" value="vida-sana" class="intereses">Vida sana</label>
         </label>
         <br>
+
+        <!-- FOTO USUARIO -->
         <label for="foto">Foto de usuario:
           <br>
           <input type="file" name="foto" accept=".jpg, .png" class="foto-usuario">
         </label>
         <br>
+
+        <!-- CONTRASEÑA -->
         <label for="password">Contraseña
           <br>
           <input type="password" name="contraseña" id="password" placeholder="Ingresar contraseña" class="password" required>
         </label>
         <br>
+
+        <!-- CONFIRMAR CONTRASEÑA -->
         <label for="confirm-password">Confirmar Contraseña
           <br>
           <input type="password" name="confirm-contraseña" id="confirm-password" placeholder="Confirmar contraseña" class="password" required>
         </label>
         <br>
+
+        <!-- BOTONES -->
         <button type="submit"><a href="/">Enviar</a></button>
         <button type="reset"><a href="">Borrar</a></button>
       </form>
     </main>
+
+    <!-- FOOTER -->
     <footer>
+
+      <!-- PAGA CON TARJETA -->
 			<div>
         <i class="fa-solid fa-credit-card"></i>
         <h3>Pagá con tarjeta o en efectivo</h3>
         <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
         puntos de pago. ¡Y siempre es seguro!</p>
       </div>
+
+      <!-- ENVIOS GRATIS -->
       <div>
         <i class="fa-solid fa-gift"></i>
         <h3>Envío gratis desde $ 2.500</h3>
         <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
         productos. Es un beneficio de Mercado Puntos.</p>
       </div>
+
+      <!-- SEGURIDAD -->
       <div>
 			<i class="fa-solid fa-user-shield"></i>
         <h3>Seguridad, de principio a fin</h3>
         <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
         porque estás siempre protegid@.</p>
       </div>
+
+      <!-- COPYRIGHT -->
       <div>
 			  <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
       </div>

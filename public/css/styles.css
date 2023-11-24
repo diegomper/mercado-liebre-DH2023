@@ -1,21 +1,25 @@
+/* Estilos generales */
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
+/* BODY */
 body {
     font-family: Roboto, Arial;
     margin: 0%;
     background-color: #ebebeb;
 }
 
+/* HEADER */
 header {
     background-color: #EAC926;
     display: flex;
     flex-wrap: wrap;
 }
 
+/* CONTENEDOR LOGO Y BARRA DE BUSQUEDA */
 .logo-barra {
     display: flex;
     align-items: center;
@@ -24,21 +28,25 @@ header {
     margin-top: 20px;
 }
 
+/* HEADER: COMPRA EN CUOTAS */
 header p {
     width: 100%;
     text-align: center;
     margin-top: 15px;
 }
 
+/* HEADER: LOGO MERCADOLIEBRE */
 header img {
     width: 40%;
 }
 
+/* BANNER */
 .banner {
     margin: 0px;
     width: 100%;
 }
 
+/* CONTENEDOR BARRA DE BUSQUEDA */
 .barra-buscar {
     width: 40%;
     padding-left: 10px;
@@ -51,28 +59,33 @@ header img {
     background-color: white;
 }
 
+/* INPUT BARRA DE BUSQUEDA */
 .barra-buscar input {
     width: 87%;
     height: 30px;
     border: none;
 }
 
+/* NAV BAR */
 nav{
     margin-top: 20px;
     margin-bottom: 20px;
     display: none;
 }
 
+/* ELEMENTOS "a" DEL NAV BAR */
 header nav ul a {
     text-decoration: none;
     color: black;
 }
 
+/* CONTENEDOR MENU HAMBURGUESA */
 .burger-menu {
     width: 100%;
     text-align: center;
 }
 
+/* ICONO MENU HAMBURGUESA */
 .burger-menu i {
     padding: 20px;
     margin: 30px;
@@ -81,27 +94,32 @@ header nav ul a {
     color: white;
 }
 
+/* MAIN */
 main {
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* SECCIONES */
 main section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
+/* IMAGENES PRODUCTOS */
 main section img {
     width: 100%;
 }
 
+/* CONTENEDOR PRODUCTOS */
 article {
     background-color: white;
     margin-top: 10px;
 }
 
+/* CONTENEDOR PRECIO DESCUENTO CAMION */
 article div {
     border-top: solid 1px #ebebeb;
     padding: 15px;
@@ -109,6 +127,7 @@ article div {
     position: relative; 
 }
 
+/* CAMION */
 article div i {
     color: #39b54a;
     display: block;
@@ -124,6 +143,7 @@ article div i {
     top: -15px;
 }
 
+/* ANIMACION CAMION */
 section article div i:hover {
     animation: i 1500ms alternate;
 }
@@ -140,38 +160,47 @@ section article div i:hover {
     90% { transform: rotateZ(-81deg);}
     100% {transform: rotateZ(-90deg);}
 }
+
+/* TAMAÑO P */
 p {
     font-size: 16px;
 }
 
+/* TAMAÑO H2 */
 h2 {
     font-size: 24px;
 }
 
+/* ESTILOS PRECIO */
 .precio {
     font-size: 18px;
     width: 30%;
 }
 
+/* ESTILOS DESCUENTO */
 .descuento {
     color: #39b54a;
     width: 70%;
 }
 
+/* TAMAÑO DESCUENTO DESCRIPCION */
 .descuento, .descripcion {
     font-size: 16px;
 }
 
+/* OCULTAR DESCRIPCION */
 .descripcion {
     visibility: hidden;
 }
 
+/* FOOTER */
 footer {
     margin-top: 30px;
     text-align: center;
     background-color: white;
 }
 
+/* ICONOS FOOTER */
 footer i {
     color: #1259c3;
     font-size: 2em;
@@ -179,24 +208,29 @@ footer i {
     transition: color, 2s;
 }
 
+/* ANIMACION ICONOS FOOTER */
 footer i:hover {
     color: #EAC926;
 }
 
+/* ESTILOS P FOOTER */
 footer p {
     color: #b6b4b4;
 }
 
+/* ESTILOS H2 */
 h2 {
     margin-top: 20px;
     margin-bottom: 10px;
     color: #666;
 }
 
+/* ESTILOS H3 FOOTER */
 h3 {
     color: #666;
 }
 
+/* ESTILOS H4 COPYRIGHT */
 h4 {
     font-size: 12px;
     margin-top: 20px;
@@ -205,6 +239,7 @@ h4 {
     color: #b6b4b4;
 }
 
+/* ESTILOS FORMULARIOS */
 form {
     display: flex;
     flex-direction: column;
@@ -212,6 +247,7 @@ form {
     margin-top: 20px;
 }
 
+/* ESTILOS INPUT */
 form input {
     font-size: 20px;
     margin-top: 10px;
@@ -221,22 +257,29 @@ form input {
     border: none;
 }
 
+/* ESTILOS FORMULARIO INPUT INTERESES */
 input.intereses {
     margin-right: 10px;
     height: 15px;
 }
+
+/* ESTILOS FORMULARIO RADIO BUTTONS */
 input.radio{
     margin-right: 10px;
     height: 15px;
 }
 
+/* ESTILOS FORMULARIO FOTO USUARIO */
 .foto-usuario {
     height: 50px;
 }
+
+/* ESTILOS FORMULARIO LABEL */
 label {
     font-weight: bold;
 }
 
+/* ESTILOS FORMULARIO BUTTONS */
 form button {
     width: 100px;
     margin-top: 15px;
@@ -246,73 +289,109 @@ form button {
     background-color: #1259c3;
 }
 
+/* ANIMACION BUTTONS */
 button:hover {
     background-color: #0022AA;
 }
 
+/* ESTILOS "a" BUTTONS */
 button a {
     text-decoration: none;
     color: white;
     font-size: 20px;
 }
+
+/* MEDIA QUERY */
+
+/* ADAPTACION RESOLUCION MIN: 361PX */
 @media (min-width: 361px) {
+
+    /* ANIMACION MOSTRAR DESCRIPCION PRODUCTO */
     article:hover .descripcion {
         visibility: visible;
     }
+
+    /* ANIMACION CONTENEDOR PRODUCTO: SOMBRA Y BORDES  */
     article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
+/* ADAPTACION RESOLUCION MIN: 769PX */
 @media (min-width: 769px) {
+
+    /* ALINEAR HEADER */
     header  {
         align-items: center;
     }
+
+    /* TAMAÑO CONTENEDOR LOGO Y BARRA DE BUSQUEDA */
     .logo-barra {
         width: 66%;
     }
+
+    /* TAMAÑO COMPRA EN CUOTAS */
     header p {
         width: 33%;
         margin-top: 20px;
     }
     
+    /* MARGENES PRODUCTO DESCUENTO */
     .descuento {
         margin-top: 1px;
         margin-left: 5px;
     }
+
+    /* NAV BAR */
     nav {
         display: flex;
         width: 100%;
         justify-content: space-around;
     }
+
     ul {
         width: 40%;
         display: flex;
         justify-content: space-around;
     }
+
+    /* OCULTAR MENU HAMBURGUESA */
     .burger-menu {
         display: none;
     }
+
+    /* TAMAÑO CONTENEDOR PRODUCTOS */
     article  {
         width: 40%;
     }
 }
 
+/* ADAPTACION RESOLUCION MIN: 1000PX */
 @media (min-width: 1000px) {
+
+    /* OCULTAR MENU HAMBURGUESA */
     .burger-menu {
         display: none;
     }
+
+    /* TAMAÑO CONTENEDOR PRODUCTOS */
     article  {
         width: 23%;
     }
+
+    /* MARGENES PRODUCTO DESCUENTO */
     .descuento {
         margin-left: 25px;
         margin-top: 1px;
     }
+
+    /* FOOTER */
     footer {
         display: flex;
         flex-wrap: wrap;
     }
+
+    /* FOOTER CONTENEDORES */
     footer div {
         margin-top: 20px;
         width: 33%;
